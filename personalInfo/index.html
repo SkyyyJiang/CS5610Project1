@@ -3,10 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tian Jiang Personal Inforamtion</title>
-    <style></style>
+    <title>Tian's personalInfo</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background-color: aqua;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 15px;
+        color: black;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        padding: 10px;
+        margin: 5px 0;
+        background-color: wheat;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      li:hover {
+        box-shadow: inset 500px 0 0 0 #54b3d6;
+      }
+    </style>
   </head>
+
   <body>
     <div class="container"></div>
+    <ul>
+      <li>Name: Sky Jiang</li>
+      <li>email: skyjiang99999@gmail.com</li>
+      <li>undergraduate school: UT Dallas</li>
+      <li>Graduate school: Northeastern University</li>
+      <li>Major: Computer Science</li>
+      <li>Favorite quoates: No pain No gain</li>
+    </ul>
   </body>
 </html>

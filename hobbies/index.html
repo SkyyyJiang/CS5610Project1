@@ -4,9 +4,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tian's Hobbies</title>
-    <style></style>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background-color: aqua;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 15px;
+        color: black;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .title {
+        margin-bottom: 30px;
+      }
+
+      .grids {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .box1 {
+        height: 300px;
+      }
+
+      .box1 img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .box2 {
+        height: 300px;
+      }
+
+      .box2 img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .box3 {
+        height: 300px;
+      }
+
+      .box3 img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .box4 {
+        height: 300px;
+      }
+
+      .box4 img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .box5 {
+        height: 300px;
+      }
+
+      .box5 img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .box6 {
+        height: 300px;
+      }
+
+      .box6 img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      @media (max-width: 700px) {
+        .grids {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 500px) {
+        .grids {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
+
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <h2 class="title">I love video games, and here are my Favorite games</h2>
+    </div>
+    <div class="grids">
+      <div class="box1">
+        <img src="../photos/Diablo.jpeg" alt="photo2" />
+      </div>
+      <div class="box2">
+        <img src="../photos/goose.png" alt="Goose goose duck" />
+      </div>
+      <div class="box3">
+        <img src="../photos/Hearthstone.png" alt="Hearthstone" />
+      </div>
+      <div class="box4">
+        <img src="../photos/league.png" alt="league" />
+      </div>
+      <div class="box5">
+        <img src="../photos/warcraft.png" alt="warcraft" />
+      </div>
+      <div class="box6">
+        <img src="../photos/pubg.png" alt="pubg" />
+      </div>
+    </div>
   </body>
 </html>
